@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Trabajo de grado</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    </head>
+    <body>
+            <img src="{{ url_for('static', filename='img/Ucema_-_Logo.png') }}" alt="Logo">
+            <h1>Innovation Sports UCEMA</h1>
+            <form action="{{ url_for('ejecutar_velocidad') }}" method="post">
+                <input type="submit" value="Ejecutar Rutina Velocidad" onclick="alert('3 2 1 YA!');">
+            </form>
+            <form action="{{ url_for('ejecutar_coordinacion') }}" method="post">
+                <input type="submit" value="Ejecutar Rutina Coordinacion" onclick="alert('3 2 1 YA!');">
+            </form>
+            <form method="GET" action="http://192.168.1.56:3000/d/kpYKpt0Vz/rutina-velocidad?orgId=1" target="_blank">
+                <button type="submit">Mostrar Resultado</button>
+              </form>
+              
+            <form method="get" action="/reiniciar_velocidad" onsubmit="return confirm('¿Estás seguro de reiniciar la rutina velocidad?')">
+                <input type="submit" value="Reiniciar Rutina Velocidad">
+            </form>    
+            <form method="get" action="/reiniciar_coordinacion" onsubmit="return confirm('¿Estás seguro de reiniciar la rutina coordinacion?')">
+                <input type="submit" value="Reiniciar Rutina Coordinacion">
+            </form>             
+    </body>
+</html>
