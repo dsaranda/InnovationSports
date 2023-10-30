@@ -4,7 +4,6 @@ ES8266 Wemos D1 mini + Sharp IR + NeoPixel + Raspberry PI 3 B
 Nombre del Proyecto
 Innovation Sport – Sistema de entrenamiento mejorado
 
-Sumario Ejecutivo
 El proyecto consiste en desarrollar un sistema de entrenamiento revolucionario
 que cambiará completamente la forma en que las personas ejercitan, entrenan y miden
 su rendimiento. El objetivo principal es proporcionar a los usuarios e instructores datos
